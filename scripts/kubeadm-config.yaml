@@ -1,0 +1,22 @@
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: InitConfiguration
+localAPIEndpoint:
+  advertiseAddress: "$CONTROL_IP"
+  bindPort: 6443
+---
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+networking:
+  serviceSubnet: "$SERVICE_CIDR"
+  podSubnet: "$POD_CIDR"
+apiServer:
+  certSANs:
+  - "$CONTROL_IP"
+localAPIEndpoint:
+  advertiseAddress: "$CONTROL_IP"
+  bindPort: 6443
+---
+apiVersion: kubelet.config.k8s.io/v1beta1
+kind: KubeletConfiguration
+shutdownGracePeriod: 10s
+shutdownGracePeriodCriticalPods: 1s

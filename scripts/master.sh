@@ -10,7 +10,7 @@ sudo kubeadm config images pull
 
 echo "Preflight Check Passed: Downloaded All Required Images"
 
-sudo kubeadm init --apiserver-advertise-address=$CONTROL_IP --apiserver-cert-extra-sans=$CONTROL_IP --pod-network-cidr=$POD_CIDR --service-cidr=$SERVICE_CIDR --node-name "$NODENAME" --ignore-preflight-errors Swap
+cat /vagrant/scripts/kubeadm-config.yaml | envsubst | tee /dev/stderr | sudo kubeadm init --node-name "$NODENAME" --ignore-preflight-errors Swap --config /dev/stdin
 
 mkdir -p "$HOME"/.kube
 sudo cp -i /etc/kubernetes/admin.conf "$HOME"/.kube/config
