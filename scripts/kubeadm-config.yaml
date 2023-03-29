@@ -18,5 +18,5 @@ localAPIEndpoint:
 ---
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
-shutdownGracePeriod: 10s
-shutdownGracePeriodCriticalPods: 1s
+shutdownGracePeriod: 60s
+shutdownGracePeriodCriticalPods: 10s
