@@ -3,13 +3,15 @@
 
 ## Documentation
 
-Current k8s version for CKA, CKAD and CKS exam: 1.26
+Current k8s version for CKA, CKAD, and CKS exam: 1.27
 
-Refer this link for documentation: https://devopscube.com/kubernetes-cluster-vagrant/
+Refer to this link for documentation: https://devopscube.com/kubernetes-cluster-vagrant/
 
-## 🚀 CKA, CKAD, CKS or KCNA Coupon Codes
+## 🚀 CKA, CKAD, CKS, or KCNA Coupon Codes
 
-🚀  If you are preparing for CKA, CKAD, CKS, or KCNA exam, **save 25%** today using code **MARCH23** at https://kube.promo/cyber. It is a limited-time offer. Or Check out [Linux Foundation coupon](https://scriptcrunch.com/linux-foundation-coupon/) page for the latest voucher codes.
+If you are preparing for CKA, CKAD, CKS, or KCNA exam, **save 20%** today using code **SCRIPT20** at https://kube.promo/devops. It is a limited-time offer. Or Check out [Linux Foundation coupon](https://scriptcrunch.com/linux-foundation-coupon/) page for the latest voucher codes.
+
+For the best savings, opt for the CKA + CKS bundle (**$210 Savings)**. Use code **DCUBE20** at https://kube.promo/bundle
 
 ## Prerequisites
 
@@ -18,7 +20,7 @@ Refer this link for documentation: https://devopscube.com/kubernetes-cluster-vag
 
 ## For MAC/Linux Users
 
-Latest version of Virtualbox for Mac/Linux can cause issues.
+The latest version of Virtualbox for Mac/Linux can cause issues.
 
 Create/edit the /etc/vbox/networks.conf file and add the following to avoid any network related issues.
 <pre>* 0.0.0.0/0 ::/0</pre>
